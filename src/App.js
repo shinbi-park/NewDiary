@@ -70,7 +70,6 @@ const dummyData = [
 
 function App() {
   const [data, dispatch] = useReducer(reducer, dummyData);
-  console.log(new Date().getTime());
 
   const dataId = useRef(0);
   //CREATE
