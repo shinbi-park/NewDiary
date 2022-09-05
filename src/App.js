@@ -93,7 +93,7 @@ function App() {
   };
 
   //EDIT
-  const onEdit = (targetId, content, date, emotion) => {
+  const onEdit = (targetId, date, content, emotion) => {
     dispatch({
       type: "EDIT",
       data: {
@@ -112,7 +112,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/new" element={<New />} />
-              <Route path="/edit" element={<Edit />} />
+              <Route path="/edit/:id" element={<Edit />} />
               <Route path="/diary/:id" element={<Diary />} />
             </Routes>
           </div>
